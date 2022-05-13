@@ -1,14 +1,14 @@
 pre-commit:
-  parallel: true
+  piped: true
   commands:
-    commit-msg:
-      run: pnpm commitlint --edit
     nx-affected-format:
       run: pnpm exec nx affected --target=format:write
     nx-affected-lint:
       run: pnpm exec nx affected --target=lint --fix
     nx-affected-spec:
       run: pnpm exec nx affected --target=test --ci --code-coverage
+    conv-commit-msg:
+      run: pnpm commitlint --edit
 
 skip_output:
   - meta
