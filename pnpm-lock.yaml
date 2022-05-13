@@ -4,6 +4,7 @@ specifiers:
   '@arkweid/lefthook': ^0.7.7
   '@commitlint/cli': ^16.2.4
   '@commitlint/config-conventional': ^16.2.4
+  '@commitlint/config-nx-scopes': ^16.2.1
   '@nrwl/cli': 14.1.5
   '@nrwl/nx-cloud': latest
   '@nrwl/workspace': 14.1.5
@@ -15,6 +16,7 @@ devDependencies:
   '@arkweid/lefthook': 0.7.7
   '@commitlint/cli': 16.2.4
   '@commitlint/config-conventional': 16.2.4
+  '@commitlint/config-nx-scopes': 16.2.1
   '@nrwl/cli': 14.1.5_typescript@4.6.4
   '@nrwl/nx-cloud': 14.0.3
   '@nrwl/workspace': 14.1.5_igyi7w6qm73tfaya7seiivlrqu
@@ -381,6 +383,16 @@ packages:
     engines: {node: '>=v12'}
     dependencies:
       conventional-changelog-conventionalcommits: 4.6.3
+    dev: true
+
+  /@commitlint/config-nx-scopes/16.2.1:
+    resolution: {integrity: sha512-73dZB+kWRNHbeL0ZRyLb7y0SRGdXVjQTJOJuJFwMF7S46JfQbWncWjydVsZE2HLyh9ZbdRvBnzusbYdKm4MR7Q==}
+    engines: {node: '>=v12'}
+    peerDependencies:
+      '@nrwl/tao': ^12.0.0 || ^13.0.0
+    peerDependenciesMeta:
+      '@nrwl/tao':
+        optional: true
     dev: true
 
   /@commitlint/config-validator/16.2.1:
