@@ -7,7 +7,7 @@ pre-commit:
       run: pnpm exec nx affected --target=format:write
     nx-affected-lint:
       run: pnpm exec nx affected --target=lint --fix
-    nx-spec:
+    nx-affected-spec:
       run: pnpm exec nx affected --target=test --ci --code-coverage
 
 skip_output:
