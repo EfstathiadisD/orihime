@@ -35,5 +35,9 @@
         "projects": "dependencies"
       }
     ]
+  },
+  "workspaceLayout": {
+    "appsDir": "packages",
+    "libsDir": "packages"
   }
 }
